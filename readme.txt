@@ -1,0 +1,1 @@
+Vamos a construir una plataforma de informacion financiera. La misma va a emplear una IA que proporcionara analisis de tendencias de activos, confeccion de reportes economico-fiancieros y a traves de tecnicas de websrcaping proveera al usuario de informacion relavante para la toma de desiciones.
