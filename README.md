@@ -19,8 +19,11 @@ Para implementar el proyecto, se utilizarán las siguientes tecnologías y herra
 - **CHATGPT.**
 - **BCRA.**
 - **YAHOO FINANCIAL.**
+- **AMBITO FINANCIERO.**
+- **CRONISTA COMERCIAL.**
+- **WALL STREET JOURNAL.**
   
-# Team.
+# Team staff.
 
 - Federico Mamani  | Data engineer.
 - Santiago Ratto   | Data scientist.
