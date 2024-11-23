@@ -18,7 +18,7 @@ Para implementar el proyecto, se utilizarán las siguientes tecnologías y herra
 
 - **CHATGPT.**
 - **BCRA.**
-- **YAHOO.**
+- **YAHOO FINANCIAL.**
   
 # Team.
 
