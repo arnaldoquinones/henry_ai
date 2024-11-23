@@ -14,6 +14,12 @@ Para implementar el proyecto, se utilizarán las siguientes tecnologías y herra
 - **Visualización**
 - **Modelos de Machine Learning**
 
+# APIs.
+
+- CHATGPT.
+- BCRA.
+- YAHOO.
+- 
 # Team.
 
 - Federico Mamani | Data engineer.
