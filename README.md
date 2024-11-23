@@ -22,8 +22,8 @@ Para implementar el proyecto, se utilizarán las siguientes tecnologías y herra
   
 # Team.
 
-- Federico Mamani | Data engineer.
-- Santiago Ratto | Data scientist.
+- Federico Mamani  | Data engineer.
+- Santiago Ratto   | Data scientist.
 - Arnaldo Quiñones | Data Analist/fullstack developer.
 
 
