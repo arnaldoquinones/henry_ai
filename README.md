@@ -1,6 +1,10 @@
 # AI GEKKO
 ##### ![](https://github.com/arnaldoquinones/henry_ai/blob/master/media/ia_gekko.png?raw=true)
 
+# Descripcion del proyecto.
+
+Crearemos una plataforma web financiera que le permita aunar al usuario obtener toda la informacion relevante a su gestion financiera en un solo sitio. A fin de pograr este objetivo se desarrollara un sistema de inteligencia artificial que proporcione tanto informacion de ultimo momento como proyecciones de activos financieros.
+
 # Pipeline y Stack Tecnológico
 
 Para implementar el proyecto, se utilizarán las siguientes tecnologías y herramientas:
