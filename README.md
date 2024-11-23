@@ -16,10 +16,10 @@ Para implementar el proyecto, se utilizarán las siguientes tecnologías y herra
 
 # APIs.
 
-- CHATGPT.
-- BCRA.
-- YAHOO.
-- 
+- **CHATGPT.**
+- **BCRA.**
+- **YAHOO.**
+  
 # Team.
 
 - Federico Mamani | Data engineer.
