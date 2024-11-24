@@ -25,7 +25,7 @@ Para implementar el proyecto, se utilizarán las siguientes tecnologías y herra
 
 # Disclaimer legal.
 
-A fin de darle la impronta profesional que un proyecto de esta envergaadura se destinara un area de la plataforma con un disclaimer legal dejando en claro que la misma ofrece informacion legal y que, de ninguna manera otorga consejos de ninguna indole sobre inversiones a realizar. 
+A fin de darle la impronta profesional que un proyecto de esta envergadura demanda se destinara un area de la plataforma con un disclaimer legal dejando en claro que la misma ofrece informacion legal y que, de ninguna manera otorga consejos sobre inversiones a realizar. 
 
 # Team staff.
 
