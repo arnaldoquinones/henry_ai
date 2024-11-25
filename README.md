@@ -12,9 +12,9 @@ La plataforma también incluirá análisis de tendencias de activos, evaluación
 Para implementar el proyecto, se utilizarán las siguientes tecnologías y herramientas:
 
 - **Python**: Herramientas y bibliotecas como Pandas, Numpy, Matplotlib y Seaborn serán utilizadas para la manipulación, análisis y visualización de datos.
-- **Reflex** 
-- **Visualización**
-- **Modelos de Machine Learning**
+- **Reflex.** 
+- **Visualización.**
+- **Modelos de Machine Learning.**
 
 # APIs.
 A modo ilustrativo se provee de una lista de las principales APIs que se emplearan en el proyecto:
