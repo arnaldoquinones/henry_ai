@@ -16,6 +16,7 @@ Para implementar el proyecto, se utilizarán las siguientes tecnologías y herra
 - **Modelos de Machine Learning**
 
 # APIs.
+A modo ilustrativo se provee de una lista de las principales APIs que se emplearan en el proyecto:
 
 - **CHATGPT.**
 - **BCRA.**
@@ -23,7 +24,7 @@ Para implementar el proyecto, se utilizarán las siguientes tecnologías y herra
 - **AMBITO FINANCIERO.**
 - **CRONISTA COMERCIAL.**
 - **WALL STREET JOURNAL.**
-- **REAL TIMENEWS APIS.**
+- **REALTIME NEWS APIS.**
 
 # Disclaimer legal.
 
