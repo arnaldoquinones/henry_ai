@@ -3,10 +3,9 @@
 
 # Descripcion del proyecto.
 
-<p style="text-align: justify;">
 Desarrollaremos una plataforma web financiera diseñada para centralizar toda la información relevante a la gestión del usuario en un único sitio. Esta herramienta integrará un sistema de inteligencia artificial que ofrecerá tanto actualizaciones en tiempo real como proyecciones sobre activos financieros. 
 La plataforma también incluirá análisis de tendencias de activos, evaluación de estados contables y generación de reportes económico-financieros. Además, mediante técnicas de web scraping, proporcionará información clave que facilitará la toma de decisiones.
-</p>
+
 
 # Pipeline y Stack Tecnológico.
 
