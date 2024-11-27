@@ -2,7 +2,7 @@
 
 import reflex as rx
 from rxconfig import config
-from reflex import app, view, theme
+from reflex import app, theme
 class State(rx.State):
     """The app state."""
     ...
