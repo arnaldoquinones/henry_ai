@@ -29,7 +29,11 @@ A modo ilustrativo se provee de una lista de las principales APIs que se emplear
 
 # Workflow.
 
+https://trello.com/b/VM1pyqxw/desarrollo-del-proyecto
+
+### 25/11 - 1/12
 Sprint 1: Definición y Configuración
+
 	Objetivo: Establecer las bases del proyecto, definir la arquitectura y configurar el entorno.
 
 	Tareas principales:
@@ -52,6 +56,8 @@ Sprint 1: Definición y Configuración
 		Prototipo básico de interfaz.
 
 -------------------------------------------------------------------------------------------------------------------
+
+### 2/12 - 8/12
 Sprint 2: Implementación de la Autenticación y Perfiles
 	Objetivo: Implementar el sistema de inicio de sesión y gestionar perfiles de usuarios.
 
@@ -73,6 +79,8 @@ Sprint 2: Implementación de la Autenticación y Perfiles
 		Inicio de sesión personalizado para cada tipo de usuario.
 
 -------------------------------------------------------------------------------------------------------------------
+
+### 9/12 - 15/12
 Sprint 3: Integración con APIs y Web Scraping
 	Objetivo: Conectar la aplicación con APIs externas y habilitar la recopilación de noticias.
 
@@ -95,6 +103,8 @@ Sprint 3: Integración con APIs y Web Scraping
 		Vista inicial con noticias e indicadores.
 
 -------------------------------------------------------------------------------------------------------------------
+
+### 16/12 - 22/12
 Sprint 4: Análisis Avanzado y Visualización
 	Objetivo: Implementar correlaciones, análisis de datos y gráficos interactivos.
 
@@ -118,6 +128,8 @@ Sprint 4: Análisis Avanzado y Visualización
 		Sistema probado y optimizado.
 
 --------------------------------------------------------------------------------------------------------------------
+
+### 23/12 - 29/12
 Sprint 5: Refinamiento, Seguridad y Despliegue
 	Objetivo: Optimizar la aplicación, garantizar seguridad y preparar el despliegue.
 
@@ -140,6 +152,7 @@ Sprint 5: Refinamiento, Seguridad y Despliegue
 		Sistema optimizado y seguro.
 		Documentación lista.
 		Aplicación desplegada y lista para el usuario.
+		Video de entre 3 y 4 minutos recorriendo las funcionalidades de la aplicacion
 
 # Disclaimer legal.
 
