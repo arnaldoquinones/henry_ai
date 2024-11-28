@@ -31,7 +31,7 @@ A modo ilustrativo se provee de una lista de las principales APIs que se emplear
 
 https://trello.com/b/VM1pyqxw/desarrollo-del-proyecto
 
-### 25/11 - 1/12
+### 25/11 - 1/12.
 Sprint 1: Definición y Configuración
 
 	Objetivo: Establecer las bases del proyecto, definir la arquitectura y configurar el entorno.
@@ -59,6 +59,7 @@ Sprint 1: Definición y Configuración
 
 ### 2/12 - 8/12
 Sprint 2: Implementación de la Autenticación y Perfiles
+
 	Objetivo: Implementar el sistema de inicio de sesión y gestionar perfiles de usuarios.
 
 	Tareas principales:
@@ -82,6 +83,7 @@ Sprint 2: Implementación de la Autenticación y Perfiles
 
 ### 9/12 - 15/12
 Sprint 3: Integración con APIs y Web Scraping
+
 	Objetivo: Conectar la aplicación con APIs externas y habilitar la recopilación de noticias.
 
 	Tareas principales:
@@ -106,6 +108,7 @@ Sprint 3: Integración con APIs y Web Scraping
 
 ### 16/12 - 22/12
 Sprint 4: Análisis Avanzado y Visualización
+
 	Objetivo: Implementar correlaciones, análisis de datos y gráficos interactivos.
 
 	Tareas principales:
@@ -131,6 +134,7 @@ Sprint 4: Análisis Avanzado y Visualización
 
 ### 23/12 - 29/12
 Sprint 5: Refinamiento, Seguridad y Despliegue
+
 	Objetivo: Optimizar la aplicación, garantizar seguridad y preparar el despliegue.
 
 	Tareas principales:
