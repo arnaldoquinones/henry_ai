@@ -1,0 +1,36 @@
+idVariable,cdSerie,descripcion
+1,246,Reservas Internacionales del BCRA (en millones de dólares - cifras provisorias sujetas a cambio de valuación)
+4,7927,Tipo de Cambio Minorista ($ por USD) Comunicación B 9791 - Promedio vendedor
+5,272,Tipo de Cambio Mayorista ($ por USD) Comunicación A 3500 - Referencia
+6,7935,Tasa de Política Monetaria (en % n.a.)
+7,1222,BADLAR en pesos de bancos privados (en % n.a.)
+8,7922,TM20 en pesos de bancos privados (en % n.a.)
+9,7920,"Tasas de interés de las operaciones de pase activas para el BCRA, a 1 día de plazo (en % n.a.)"
+10,7921,"Tasas de interés de las operaciones de pase pasivas para el BCRA, a 1 día de plazo (en % n.a.)"
+11,3139,Tasas de interés por préstamos entre entidades financiera privadas (BAIBAR) (en % n.a.)
+12,1212,Tasas de interés por depósitos a 30 días de plazo en entidades financieras (en % n.a.)
+13,7924,Tasa de interés de préstamos por adelantos en cuenta corriente
+14,7925,Tasa de interés de préstamos personales
+15,250,Base monetaria - Total (en millones de pesos)
+16,251,Circulación monetaria (en millones de pesos)
+17,251,Billetes y monedas en poder del público (en millones de pesos)
+18,296,Efectivo en entidades financieras (en millones de pesos)
+19,252,Depósitos de los bancos en cta. cte. en pesos en el BCRA (en millones de pesos)
+21,444,Depósitos en efectivo en las entidades financieras - Total (en millones de pesos)
+22,446,En cuentas corrientes (neto de utilización FUCO) (en millones de pesos)
+23,450,En Caja de ahorros (en millones de pesos)
+24,452,A plazo (incluye inversiones y excluye CEDROS) (en millones de pesos)
+25,7919,"M2 privado, promedio móvil de 30 días, variación interanual (en %)"
+26,392,Préstamos de las entidades financieras al sector privado (en millones de pesos)
+27,7931,Inflación mensual (variación en %)
+28,7932,Inflación interanual (variación en % i.a.)
+29,7933,Inflación esperada - REM próximos 12 meses - MEDIANA (variación en % i.a)
+30,3540,CER (Base 2.2.2002=1)
+31,7913,"Unidad de Valor Adquisitivo (UVA) (en pesos -con dos decimales-, base 31.3.2016=14.05)"
+32,7914,"Unidad de Vivienda (UVI) (en pesos -con dos decimales-, base 31.3.2016=14.05)"
+34,7936,Tasa de Política Monetaria (en % e.a.)
+35,7937,BADLAR en pesos de bancos privados (en % e.a.)
+40,7988,"Índice para Contratos de Locación (ICL-Ley 27.551, con dos decimales, base 30.6.20=1)"
+41,7990,"Tasas de interés de las operaciones de pase pasivas para el BCRA, a 1 día de plazo (en % e.a.)"
+42,266,Pases pasivos para el BCRA - Saldos (en millones de pesos)
+43,3539,Tasa de interés para uso de la Justicia – Comunicado P 14290 | Base 01/04/1991 (en %)
