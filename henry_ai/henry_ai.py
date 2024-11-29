@@ -11,7 +11,7 @@ def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.box(
         rx.container(
-            rx.color_mode.button(position="top-right"),
+            # rx.color_mode.button(position="top-right"),
             rx.vstack(
                 rx.heading("Welcome to AI Gekko!", size="9", color ="white"),
                 rx.text(
@@ -28,7 +28,7 @@ def index() -> rx.Component:
                 justify="center",
                 min_height="85vh",
             ),
-            rx.logo(),
+            # rx.logo(),
         ),
         # Aplicamos el degradado al fondo del contenedor principal
         background_image="linear-gradient(to bottom, #2E8A5E, #A7D4B6)",  # Degradado verde
