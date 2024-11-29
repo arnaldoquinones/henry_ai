@@ -3,6 +3,7 @@
 import reflex as rx
 from rxconfig import config
 from reflex import app, theme
+from henry_ai.pages.bcra_variables import validation_page
 class State(rx.State):
     """The app state."""
     ...
@@ -19,11 +20,13 @@ def index() -> rx.Component:
                     # rx.code(f"{config.app_name}/{config.app_name}.py"),
                     size="5",
                 ),
+                rx.text("Haz clic en el botón para ir a la página de validación."),
                 rx.link(
-                    rx.button("Check out our website"),
-                    href="https://reflex.dev/docs/getting-started/introduction/",
-                    is_external=True,
+                    "Ir a Validación",
+                    href="bcra_variables.py",  # Ruta de la segunda página
+                    style={"color": "white", "backgroundColor": "blue", "padding": "10px", "borderRadius": "5px", "textDecoration": "none"},
                 ),
+
                 spacing="5",
                 justify="center",
                 min_height="85vh",
@@ -53,6 +56,8 @@ app = rx.App(style=style)
 
 # Add pages to the app
 app.add_page(index)
+# Agregar la página de validación
+app.add_page(validation_page, route="bcra_variables.py")
 
 # Run the app
 app._compile()
