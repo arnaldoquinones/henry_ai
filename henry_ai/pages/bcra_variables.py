@@ -55,7 +55,7 @@ def validation_page():
         rx.vstack(
             rx.heading("Ingreso de Datos", size="lg"),
             rx.input(
-                placeholder="Variable (idVariable)", 
+                placeholder="Variable (idVariable)",
                 on_change=lambda value: AppState.set_variable(value),
             ),
             rx.input(
@@ -72,7 +72,7 @@ def validation_page():
             ),
         ),
             rx.text(AppState.mensaje_error, color="red"),
-            rx.link("Volver al inicio", href="henry_ai.py", style={"color": "blue", "marginTop": "10px"}),
+            rx.link("Volver al inicio", href="localhost:3000", style={"color": "blue", "marginTop": "10px"}),
         
     )
 

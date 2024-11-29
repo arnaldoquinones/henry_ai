@@ -55,7 +55,7 @@ style = {
 app = rx.App(style=style)
 
 # Add pages to the app
-app.add_page(index)
+app.add_page(index, route="henry_ai")
 # Agregar la página de validación
 app.add_page(validation_page, route="bcra_variables.py")
 
