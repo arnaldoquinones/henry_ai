@@ -18,7 +18,14 @@ def index() -> rx.Component:
     return rx.box(
         rx.container(
             rx.vstack(
-                rx.heading("Welcome to AI Gekko!", size="9", color="white"),
+                # Ajustamos la posición del texto "Welcome to AI Gekko!"
+                rx.box(
+                    rx.heading("Welcome to AI Gekko!", size="8", color="white"),
+                    position="absolute",  # Permite posicionamiento absoluto
+                    top="10px",  # Ajusta la posición desde la parte superior
+                    left="550px",  # Aumenta este valor para mover más hacia la derecha
+                    text_align="center",
+                ),
                 rx.text(
                     "Get started with investing!! ",
                     size="5",
@@ -40,11 +47,13 @@ def index() -> rx.Component:
                 min_height="85vh",
             ),
         ),
-        background_image="linear-gradient(to bottom, #2E8A5E, #A7D4B6)",
+        background_image="url('https://github.com/arnaldoquinones/henry_ai/blob/master/assets/fondo_dashboard_nuevo_II.jpg?raw=true')",
         background_size="cover",
         background_position="center",
         min_height="100vh",
+        position="relative",  # Necesario para que el hijo con posición absoluta funcione
     )
+
 
 
 # Define global styles
