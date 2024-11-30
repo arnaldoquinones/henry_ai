@@ -18,41 +18,51 @@ def index() -> rx.Component:
     return rx.box(
         rx.container(
             rx.vstack(
-                # Ajustamos la posición del texto "Welcome to AI Gekko!"
+                # Imagen del logo, posicionada de forma independiente
+                rx.box(
+                    rx.image(
+                        src="https://github.com/arnaldoquinones/henry_ai/blob/master/assets/logo_II.png?raw=true",
+                        width="300px",
+                        height="210px",
+                        alt="Logo",
+                    ),
+                    position="absolute",
+                    top="90px",
+                    left="90px",
+                ),
+                # Texto del encabezado "Welcome to AI Gekko!"
                 rx.box(
                     rx.heading("Welcome to AI Gekko!", size="8", color="white"),
-                    position="absolute",  # Permite posicionamiento absoluto
-                    top="10px",  # Ajusta la posición desde la parte superior
-                    left="550px",  # Aumenta este valor para mover más hacia la derecha
-                    text_align="center",
+                    position="absolute",
+                    top="20px",  # Ajusta hacia abajo
+                    left="550px",  # Ajusta hacia la derecha
                 ),
-                rx.text(
-                    "Get started with investing!! ",
-                    size="5",
+                # Enlace "Ir a Validación"
+                rx.box(
+                    rx.link(
+                        "Ir a Validación",
+                        href="/bcra-variables",
+                        style={
+                            "color": "white",
+                            "backgroundColor": "transparent",
+                            "padding": "10px",
+                            "borderRadius": "5px",
+                            "textDecoration": "none",
+                        },
+                    ),
+                    position="absolute",
+                    top="25px",  # Ajusta la posición desde la parte superior
+                    left="1180px",  # Ajusta la posición desde la izquierda
                 ),
-                rx.text("Haz clic en el botón para ir a la página de validación."),
-                rx.link(
-                    "Ir a Validación",
-                    href="/bcra-variables",  # Ruta de la segunda página
-                    style={
-                        "color": "white",
-                        "backgroundColor": "green",
-                        "padding": "10px",
-                        "borderRadius": "5px",
-                        "textDecoration": "none",
-                    },
-                ),
-                spacing="5",
-                justify="center",
-                min_height="85vh",
             ),
         ),
         background_image="url('https://github.com/arnaldoquinones/henry_ai/blob/master/assets/fondo_dashboard_nuevo_II.jpg?raw=true')",
         background_size="cover",
         background_position="center",
         min_height="100vh",
-        position="relative",  # Necesario para que el hijo con posición absoluta funcione
+        position="relative",  # Define el contexto para los elementos con posición absoluta
     )
+
 
 
 
