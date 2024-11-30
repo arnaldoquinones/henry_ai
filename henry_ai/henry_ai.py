@@ -37,6 +37,36 @@ def index() -> rx.Component:
                     top="20px",  # Ajusta hacia abajo
                     left="550px",  # Ajusta hacia la derecha
                 ),
+                rx.box(
+                    rx.text("Finanzas", size="8", color="white"),
+                    position="absolute",
+                    top="365px",  # Ajusta hacia abajo
+                    left="535px",  # Ajusta hacia la derecha
+                ),
+                rx.box(
+                    rx.text("Economia", size="8", color="white"),
+                    position="absolute",
+                    top="365px",  # Ajusta hacia abajo
+                    left="800px",  # Ajusta hacia la derecha
+                ),
+                rx.box(
+                    rx.text("Activo", size="8", color="white"),
+                    position="absolute",
+                    top="330px",  # Ajusta hacia abajo
+                    left="200px",  # Ajusta hacia la derecha
+                ),
+                rx.box(
+                    rx.text("Cotizaciones", size="8", color="white"),
+                    position="absolute",
+                    top="355px",  # Ajusta hacia abajo
+                    left="1100px",  # Ajusta hacia la derecha
+                ),
+                rx.box(
+                    rx.text("AI CHAT", size="8", color="white"),
+                    position="absolute",
+                    top="14px",  # Ajusta hacia abajo
+                    left="1035px",  # Ajusta hacia la derecha
+                ),
                 # Enlace "Ir a Validación"
                 rx.box(
                     rx.link(
@@ -51,7 +81,7 @@ def index() -> rx.Component:
                         },
                     ),
                     position="absolute",
-                    top="25px",  # Ajusta la posición desde la parte superior
+                    top="22px",  # Ajusta la posición desde la parte superior
                     left="1180px",  # Ajusta la posición desde la izquierda
                 ),
             ),
