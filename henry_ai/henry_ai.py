@@ -144,6 +144,22 @@ def index() -> rx.Component:
                     top="22px",  # Ajusta la posición desde la parte superior
                     left="1180px",  # Ajusta la posición desde la izquierda
                 ),
+                                rx.box(
+                    rx.link(
+                        " Iniciar sesion / Registrate !! ",
+                        href="/bcra-variables",
+                        style={
+                            "color": "white",
+                            "backgroundColor": "302E2C",
+                            "padding": "10px",
+                            "borderRadius": "5px",
+                            "textDecoration": "none",
+                        },
+                    ),
+                    position="absolute",
+                    top="39px",  # Ajusta la posición desde la parte superior
+                    left="170px",  # Ajusta la posición desde la izquierda
+                ),
             ),
         ),
         background_image="url('https://github.com/arnaldoquinones/henry_ai/blob/master/assets/fondo_dashboard_nuevo_II.jpg?raw=true')",
