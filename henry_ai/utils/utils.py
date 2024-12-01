@@ -21,7 +21,7 @@ def validar_variable(variable_input):
 def validar_fecha(fecha_str):
     """Valida si una fecha está en formato yyyy-mm-dd."""
     try:
-        return datetime.strptime(fecha_str, "%Y-%m-%d")
+        return datetime.strptime(fecha_str.split(" ")[0], "%Y-%m-%d")
     except ValueError:
         return None
 

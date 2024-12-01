@@ -14,6 +14,8 @@ class State(rx.State):
     ...
 class AreaState(rx.State):
     # Define datos iniciales
+
+    curve_type = "basis"
     data = [
         {"name": "Page A", "uv": 4000, "pv": 2400, "amt": 2400},
         {"name": "Page B", "uv": 3000, "pv": 1398, "amt": 2210},
@@ -32,8 +34,11 @@ class AreaState(rx.State):
             self.data[i]["pv"] = random.randint(0, 10000)
             self.data[i]["amt"] = random.randint(0, 10000)
 
+
     def change_curve_type(self, type_input):
         self.curve_type = type_input
+
+
 
 
 def area_sync() -> rx.Component:
@@ -71,6 +76,7 @@ def area_sync() -> rx.Component:
         box_shadow="3xl",  # Añade sombra
     )
 
+
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.box(
@@ -90,6 +96,7 @@ def index() -> rx.Component:
                 ),
                 # area_chart_component(),
                 area_sync(),
+                
                 # Texto del encabezado "Welcome to AI Gekko!"
                 rx.box(
                     rx.heading("Welcome to AI Gekko!", size="8", color="white"),
@@ -183,6 +190,7 @@ style = {
 app = rx.App(style=style)
 
 # Add pages to the app
+
 app.add_page(index, route="/")
 app.add_page(validation_page, route="/bcra-variables")
 
