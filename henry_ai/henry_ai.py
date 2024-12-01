@@ -88,6 +88,11 @@ def index() -> rx.Component:
                     top="90px",
                     left="90px",
                 ),
+                # rx.link(
+                # rx.image(src=r"D:\Users\Arnaldo\Desktop\SISTEMAS\proyectos\henry_ai\media\logo_inicio.png", alt="Example Image", width="50px"),  # Ajusta las propiedades según sea necesario
+                # href="/"
+                # ),
+                
                 # area_chart_component(),
                 area_sync(),
                 # Texto del encabezado "Welcome to AI Gekko!"
