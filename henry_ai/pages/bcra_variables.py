@@ -1,10 +1,12 @@
 import reflex as rx
 from reflex.state import State
+import reflex_calendar as calendar
 from datetime import datetime
 from henry_ai.utils.utils import validar_variable, validar_fecha, dividir_rango_fechas
 import requests
 import pandas as pd
 import urllib3
+from typing import Dict, List
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -15,11 +17,8 @@ class AppState(State):
     fecha_hasta: str = None
     inicio = [2021-1-1]
     final = [2021-1-5]
-    tabla = []
-    valores = []
     mensaje_error = ''
-    data= pd.DataFrame(tabla)
-    columnas = []
+    data = pd.DataFrame()
     @rx.event
     def obtener_datos_concatenados(self):
         """
@@ -34,6 +33,7 @@ class AppState(State):
             list: Lista de diccionarios con los datos obtenidos de la API.
         """
         self.mensaje_error = 'Inicio la carga de datos'
+        self.data = self.data.iloc[0:0]
         for i, f in zip(self.inicio, self.final):
             url = f"https://api.bcra.gob.ar/estadisticas/v2.0/datosvariable/{self.variable}/{i.strftime('%Y-%m-%d')}/{f.strftime('%Y-%m-%d')}"
             print(i)
@@ -48,14 +48,11 @@ class AppState(State):
                 results = data.get("results", [])
 
                 if results:
-                    self.tabla.extend(results)  # Añadir los resultados a la lista de datos
-                    self.columnas = [list(dic.keys()) for dic in self.tabla]
-                    self.valores = [list(dic.values()) for dic in self.tabla]
-                    self.mensaje_error = f'Datos Cargados: columnas: {self.data.columns}'
-                    self.data = pd.DataFrame(results)
-                    print(results)
-                    print(data)
-
+                    self.mensaje_error = f'Cargando datos {i} a {f}...'
+                    # Crear un DataFrame temporal con los resultados
+                    temp_df = pd.DataFrame(results)
+                    # Concatenar el DataFrame temporal con el acumulador
+                    self.data = pd.concat([self.data, temp_df])
                 else:
                     self.mensaje_error = 'No hay datos'
 
@@ -63,6 +60,7 @@ class AppState(State):
                 self.mensaje_error = f'Error: {e}'
             except KeyError as e:
                 self.mensaje_error = f'Error: {e}'
+        self.mensaje_error = 'Datos Cargados.'
 
 
     @rx.event
@@ -100,44 +98,67 @@ class AppState(State):
         self.fecha_hasta = fecha_hasta
         self.inicio = inicio
         self.final = final
-        self.mensaje_error = self.inicio[0]
+        self.mensaje_error = "✔"
+
+class TablaVariables(State):
+    df = pd.read_csv('henry_ai/utils/data/principalesVariables.csv', usecols=["idVariable", "descripcion"])
 
 # Página principal
 # Página de validación
 def validation_page():
     return rx.center(
         rx.vstack(
-            rx.heading("Ingreso de Datos", size="lg"),
-            rx.input(
-                placeholder="Variable (idVariable)",
-                on_change=lambda value: AppState.set_variable(value),
+            rx.hstack(
+                rx.vstack(
+                    rx.heading("Ingreso de Datos", size="lg"),
+                    rx.input(
+                        placeholder="Variable (idVariable)",
+                        on_change=lambda value: AppState.set_variable(value),
+                    ),
+                    rx.input(
+                        type= "date",
+                        on_change=lambda value: AppState.set_fecha_desde(value),
+                    ),
+                    rx.input(
+                        type= "date", 
+                        on_change=lambda value: AppState.set_fecha_hasta(value),
+                    ),
+                    rx.button(
+                        "Aceptar",
+                        on_click=AppState.validar_inputs(AppState.variable, AppState.fecha_desde, AppState.fecha_hasta),  # Ejecuta el método de validación
+                    ),
+                    rx.button(
+                        "Obtener Datos",
+                        on_click=AppState.obtener_datos_concatenados(),  # Ejecuta el método de validación
+                    ),
+                    rx.text(AppState.mensaje_error, color="red"),
+                ),
+                rx.box(
+                    rx.data_table(
+                        data = TablaVariables.df,
+                        pagination = {
+                            "limit": 1
+                        },
+                        search = True,
+                        resizable = True,
+                        height = "100%"
+                    ),
+                border_radius="5px",
+                width="40%",
+                margin="8px",
+                padding="8px",
+                height = "300px"
+                ),
+                rx.link("Volver al inicio", href="/", style={"color": "blue", "marginTop": "10px"}),
+  
+                height = "350px"
             ),
-            rx.input(
-                placeholder="Fecha inicial (yyyy-mm-dd)", 
-                on_change=lambda value: AppState.set_fecha_desde(value),
-            ),
-            rx.input(
-                placeholder="Fecha final (yyyy-mm-dd)", 
-                on_change=lambda value: AppState.set_fecha_hasta(value),
-            ),
-            rx.button(
-                "Aceptar",
-                on_click=AppState.validar_inputs(AppState.variable, AppState.fecha_desde, AppState.fecha_hasta),  # Ejecuta el método de validación
-            ),
-            rx.button(
-                "Obtener Datos",
-                on_click=AppState.obtener_datos_concatenados(),  # Ejecuta el método de validación
-            ),
-            
             rx.data_table(
                 data= AppState.data,
                 pagination= True,
 
-            ),
-        ),
-            rx.text(AppState.mensaje_error, color="red"),
-            rx.link("Volver al inicio", href="localhost:3000", style={"color": "blue", "marginTop": "10px"}),
-            
+            )
+        )          
     )
 
 # Configuración de la aplicación
