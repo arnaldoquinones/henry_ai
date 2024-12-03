@@ -102,6 +102,12 @@ class AppState(State):
 
 class TablaVariables(State):
     df = pd.read_csv('henry_ai/utils/data/principalesVariables.csv', usecols=["idVariable", "descripcion"])
+    variables: List[str] = []
+    def __init__(self, *args, **kwargs):
+        # Llama al __init__ de la clase base State para manejar argumentos adicionales
+        super().__init__(*args, **kwargs)
+        for item in self.df['idVariable']:
+            self.variables.append(str(item))
 
 # Página principal
 # Página de validación
@@ -111,7 +117,9 @@ def validation_page():
             rx.hstack(
                 rx.vstack(
                     rx.heading("Ingreso de Datos", size="lg"),
-                    rx.input(
+                    rx.select(
+                        TablaVariables.variables,
+                        value=AppState.variable,
                         placeholder="Variable (idVariable)",
                         on_change=lambda value: AppState.set_variable(value),
                     ),
