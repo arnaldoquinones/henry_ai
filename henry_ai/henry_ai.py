@@ -156,7 +156,7 @@ def index() -> rx.Component:
                     top="22px",  # Ajusta la posición desde la parte superior
                     left="1180px",  # Ajusta la posición desde la izquierda
                 ),
-                                rx.box(
+                rx.box(
                     rx.link(
                         " Iniciar sesion / Registrate !! ",
                         href="/bcra-variables",
